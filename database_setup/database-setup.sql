@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS user(
 
 CREATE TABLE IF NOT EXISTS open_data(
     id_data BIGINT NOT NULL AUTO_INCREMENT,
-    data_url VARCHAR(250) NOT NULL,
+    data_url TEXT NOT NULL,
     data_open_license TINYINT NOT NULL,
     data_owner_id BIGINT NOT NULL,
     update_frequency_id INT NOT NULL,
