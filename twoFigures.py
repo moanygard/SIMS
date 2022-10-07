@@ -1,11 +1,11 @@
-import math
-import pandas as pd
 from bokeh.io import output_file, show
 from bokeh.palettes import Category20c
 from bokeh.plotting import figure
 from bokeh.transform import cumsum
 from bokeh.models import LabelSet, ColumnDataSource
 from bokeh.layouts import column
+import pandas as pd
+import math
 
 output_file("twoFigures.html")
 
