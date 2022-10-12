@@ -1,0 +1,102 @@
+/****************************************
+* Filename: styles.css                  *
+* Author: Moa Nygård                    *
+* Course: SIMS 15hp                     *
+* Created: 2022-10-07                   *
+* Updated: 2022-10-11                   *
+* Style sheets for data owner           *
+*****************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #333;
+    background-color: #f4f3f3;
+}
+
+#mainheader {
+    height: 3.2em;
+    line-height: 3.2em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
+}
+#mainheader h1 { margin: 0 0 0 1em; float: left; cursor: pointer; }
+
+.vertical-menu {
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+    text-decoration: none;
+}
+
+.vertical-menu a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.left {
+    float: left;
+    text-align: left;
+    margin-right: 0.2em;
+}
+
+.contain {
+    width: 100%;
+    max-width: 1010px;
+    margin: 5% auto;}
+
+.container { 
+    width: 100%;
+    padding: 2%;
+    margin: 1em auto 1em auto;
+    max-width: 990px; 
+    background-color: #fff;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
+    border-radius: .3em;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+h2 { font-size: 1.3em; margin-top: 0.5em; margin-bottom: 0.8em; }
+h3 { font-size: 1.35em; margin-top: 0.5em; margin-bottom: 1.8em; } 
+h4 { font-size: 1.1em; font-weight: 500; margin-top: 0.2em; margin-bottom: 0.25em; }
+
+footer { clear: both; padding: 2em 0 0 0; font-size: 0.825em; color: #666; text-align: center; }
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+@media only screen and (max-width : 800px) {
+    body {
+        background-color: #fff;
+    }
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #mainheader {
+        height: auto;
+        line-height: normal;
+        padding-bottom: 0;
+    }
+    #mainheader h1 { float: none; }
+}
