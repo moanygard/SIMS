@@ -3,13 +3,15 @@
 - Author: Moa Nygård                    -
 - Kurs: SIMS 15hp                       -
 - Created: 2022-10-07                   -
-- Updated: 2022-10-11                   -
-- Dummy Data Owner                      -
+- Updated: 2022-10-20                   -
+- Data Owner                            -
 ---------------------------------------->
 
 <?php
     session_start();
     $page_title = "Startsida";
+    include 'includes/db_connection.php';
+    $conn = OpenCon();
 ?>
 
 <!DOCTYPE html>
@@ -28,9 +30,9 @@
     <div class="contain">
         <div class="container">
                 <div class="vertical-menu">
-                    <a href="download.php?file=TestDataVisualization.csv">Download CSV</a>
-                    <a href="download.php?file=TestDataVisualization.json" download>Download JSON</a>
-                    <a href="download.php?file=TestDataVisualization.xlsx" download>Download xlsx</a>
+                    <a href="download.php?file=files/TestDataVisualization.csv" target="_new">Download CSV</a>              
+                    <a href="download.php?file=files/TestDataVisualization.json" target="_new" download>Download JSON</a>
+                    <a href="download.php?file=files/TestDataVisualization.xlsx" target="_new" download>Download xlsx</a>
                 </div>
             <footer>
                 <p>Data Owner - SIMS</p>
