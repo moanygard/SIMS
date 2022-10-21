@@ -2,9 +2,9 @@
 // https://www.cloudways.com/blog/connect-mysql-with-php/
 function OpenCon()
  {
-    $servername = 'localhost'; //localhost / studenter.miun.se
+    $servername = 'localhost'; //localhost
     $username= 'root';  //root 
-    $password=''; // '9a5uhyen'
+    $password='';
     $dbname= 'opendata';
 
     $conn = new mysqli($servername, $username, $password, $dbname) or die("Connect failed: %s\n". $conn -> error);
